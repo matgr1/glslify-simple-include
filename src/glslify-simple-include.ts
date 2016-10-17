@@ -1,6 +1,3 @@
-declare let require: any;
-require("babel-polyfill");
-
 import * as path from "path";
 import * as GlslSimpleInclude from "glsl-simple-include";
 import { readTextFile } from "read-text-file";

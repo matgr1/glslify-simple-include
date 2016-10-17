@@ -1,2 +1,2 @@
-export declare type completionCallback = (err: any, data: string) => void;
-export declare function transform(filename: string, src: string, opts: any, done: completionCallback): void;
+declare function transform(filename: string, src: string, opts: any, done: (err: any, data: string) => void): void;
+export = transform;

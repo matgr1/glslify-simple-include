@@ -1,0 +1,43 @@
+{
+  "name": "glslify-simple-include",
+  "version": "0.0.0-alpha.1",
+  "description": "glslify plugin for a simple \"#pragma include\" directive in shader files",
+  "keywords": [
+    "glsl",
+    "glslify"
+  ],
+  "author": "matgr1",
+  "license": "MIT",
+  "main": "build/es5/glslify-simple-include.js",
+  "files": [
+    "build/**/*"
+  ],
+  "typings": "build/glslify-simple-include.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matgr1/glslify-simple-include"
+  },
+  "devDependencies": {
+    "@types/node": "^6.0.45",
+    "babel-cli": "^6.16.0",
+    "babel-preset-es2015": "^6.16.0",
+    "typescript": "2.0.3"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.16.0",
+    "glsl-simple-include": "0.0.6-alpha.3",
+    "path": "^0.12.7",
+    "read-text-file": "0.0.0-alpha.1"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ],
+    "sourceMaps": "inline"
+  },
+  "scripts": {
+    "build:ts": "tsc -p ./src/tsconfig.json",
+    "build:babel": "babel build/es6 -d build/es5",
+    "build": "npm run build:ts && npm run build:babel"
+  }
+}

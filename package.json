@@ -1,7 +1,7 @@
 {
   "name": "glslify-simple-include",
   "version": "0.0.0-alpha.1",
-  "description": "glslify plugin for a simple \"#pragma include\" directive in shader files",
+  "description": "glslify transform for a simple \"#pragma include\" directive in shader files",
   "keywords": [
     "glsl",
     "glslify"

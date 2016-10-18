@@ -2,9 +2,7 @@ import * as path from "path";
 import * as GlslSimpleInclude from "glsl-simple-include";
 import { readTextFile } from "read-text-file";
 
-export type completionCallback = (err: any, data: string) => void;
-
-export function transform(filename: string, src: string, opts: any, done: completionCallback): void
+function transform(filename: string, src: string, opts: any, done: (err: any, data: string) => void): void
 {
 	let processPromise = GlslSimpleInclude.processIncludes(
 		readTextFile,
@@ -27,3 +25,5 @@ export function transform(filename: string, src: string, opts: any, done: comple
 			done(error, null);
 		});
 }
+
+export = transform;

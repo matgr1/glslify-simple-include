@@ -1,6 +1,6 @@
 {
   "name": "glslify-simple-include",
-  "version": "0.0.0-alpha.5",
+  "version": "0.0.0-alpha.7",
   "description": "glslify transform for a simple \"#pragma include\" directive in shader files",
   "keywords": [
     "glsl",

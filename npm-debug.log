@@ -1,0 +1,134 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/6.8.1/bin/node',
+1 verbose cli   '/Users/Matt/.npm-packages/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.8
+3 info using node@v6.8.1
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/Matt/Documents/GitHub/matgr1/glslify-simple-include',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/Matt/.npm/glslify-simple-include/0.0.0-alpha.5/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/Matt/.npm correctMkdir not in flight; initializing
+10 info lifecycle glslify-simple-include@0.0.0-alpha.5~prepublish: glslify-simple-include@0.0.0-alpha.5
+11 verbose lifecycle glslify-simple-include@0.0.0-alpha.5~prepublish: unsafe-perm in lifecycle true
+12 verbose lifecycle glslify-simple-include@0.0.0-alpha.5~prepublish: PATH: /Users/Matt/.npm-packages/lib/node_modules/npm/bin/node-gyp-bin:/Users/Matt/Documents/GitHub/matgr1/glslify-simple-include/node_modules/.bin:/usr/local/Cellar/node/6.8.1/bin:/Users/Matt/.npm-packages/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+13 verbose lifecycle glslify-simple-include@0.0.0-alpha.5~prepublish: CWD: /Users/Matt/Documents/GitHub/matgr1/glslify-simple-include
+14 silly lifecycle glslify-simple-include@0.0.0-alpha.5~prepublish: Args: [ '-c', 'npm run build' ]
+15 silly lifecycle glslify-simple-include@0.0.0-alpha.5~prepublish: Returned: code: 0  signal: null
+16 verbose tar pack [ '/Users/Matt/.npm/glslify-simple-include/0.0.0-alpha.5/package.tgz',
+16 verbose tar pack   '/Users/Matt/Documents/GitHub/matgr1/glslify-simple-include' ]
+17 verbose tarball /Users/Matt/.npm/glslify-simple-include/0.0.0-alpha.5/package.tgz
+18 verbose folder /Users/Matt/Documents/GitHub/matgr1/glslify-simple-include
+19 verbose addLocalTarball adding from inside cache /Users/Matt/.npm/glslify-simple-include/0.0.0-alpha.5/package.tgz
+20 verbose correctMkdir /Users/Matt/.npm correctMkdir not in flight; initializing
+21 silly cache afterAdd glslify-simple-include@0.0.0-alpha.5
+22 verbose afterAdd /Users/Matt/.npm/glslify-simple-include/0.0.0-alpha.5/package/package.json not in flight; writing
+23 verbose correctMkdir /Users/Matt/.npm correctMkdir not in flight; initializing
+24 verbose afterAdd /Users/Matt/.npm/glslify-simple-include/0.0.0-alpha.5/package/package.json written
+25 silly publish { name: 'glslify-simple-include',
+25 silly publish   version: '0.0.0-alpha.5',
+25 silly publish   description: 'glslify transform for a simple "#pragma include" directive in shader files',
+25 silly publish   keywords: [ 'glsl', 'glslify' ],
+25 silly publish   author: { name: 'matgr1' },
+25 silly publish   license: 'MIT',
+25 silly publish   main: 'build/es5/glslify-simple-include.js',
+25 silly publish   files: [ 'build/**/*' ],
+25 silly publish   typings: 'build/glslify-simple-include.d.ts',
+25 silly publish   repository:
+25 silly publish    { type: 'git',
+25 silly publish      url: 'git+https://github.com/matgr1/glslify-simple-include.git' },
+25 silly publish   devDependencies:
+25 silly publish    { '@types/node': '^6.0.45',
+25 silly publish      'babel-cli': '^6.16.0',
+25 silly publish      'babel-preset-es2015': '^6.16.0',
+25 silly publish      'babel-plugin-transform-runtime': '^6.15.0',
+25 silly publish      typescript: '2.0.3' },
+25 silly publish   dependencies:
+25 silly publish    { 'babel-runtime': '^6.11.6',
+25 silly publish      'glsl-simple-include': '0.0.6-alpha.6',
+25 silly publish      path: '^0.12.7',
+25 silly publish      'read-text-file': '0.0.0-alpha.3' },
+25 silly publish   babel:
+25 silly publish    { presets: [ 'es2015' ],
+25 silly publish      sourceMaps: 'inline',
+25 silly publish      plugins: [ [Object] ] },
+25 silly publish   scripts:
+25 silly publish    { 'build:ts': 'tsc -p ./src/tsconfig.json',
+25 silly publish      'build:babel': 'babel build/es6 -d build/es5',
+25 silly publish      build: 'npm run build:ts && npm run build:babel',
+25 silly publish      prepublish: 'npm run build' },
+25 silly publish   readme: '# glslify-simple-include\n\nNOTE: es5 version requires babel-polyfill\n',
+25 silly publish   readmeFilename: 'README.md',
+25 silly publish   gitHead: '2bb83c79fa5883ccf01effce1734e27708b2d314',
+25 silly publish   bugs: { url: 'https://github.com/matgr1/glslify-simple-include/issues' },
+25 silly publish   homepage: 'https://github.com/matgr1/glslify-simple-include#readme',
+25 silly publish   _id: 'glslify-simple-include@0.0.0-alpha.5',
+25 silly publish   _shasum: '18d0a8ba6e575453762f7f9b963292e84d9d99ec',
+25 silly publish   _from: '.' }
+26 verbose getPublishConfig undefined
+27 silly mapToRegistry name glslify-simple-include
+28 silly mapToRegistry using default registry
+29 silly mapToRegistry registry https://registry.npmjs.org/
+30 silly mapToRegistry data Result {
+30 silly mapToRegistry   raw: 'glslify-simple-include',
+30 silly mapToRegistry   scope: null,
+30 silly mapToRegistry   escapedName: 'glslify-simple-include',
+30 silly mapToRegistry   name: 'glslify-simple-include',
+30 silly mapToRegistry   rawSpec: '',
+30 silly mapToRegistry   spec: 'latest',
+30 silly mapToRegistry   type: 'tag' }
+31 silly mapToRegistry uri https://registry.npmjs.org/glslify-simple-include
+32 verbose publish registryBase https://registry.npmjs.org/
+33 silly publish uploading /Users/Matt/.npm/glslify-simple-include/0.0.0-alpha.5/package.tgz
+34 verbose request uri https://registry.npmjs.org/glslify-simple-include
+35 verbose request sending authorization for write operation
+36 info attempt registry request try #1 at 11:51:01 PM
+37 verbose request using bearer token for auth
+38 verbose request id 62f22ad45e9a01c0
+39 http request PUT https://registry.npmjs.org/glslify-simple-include
+40 http 403 https://registry.npmjs.org/glslify-simple-include
+41 verbose headers { 'content-type': 'application/json',
+41 verbose headers   'cache-control': 'max-age=300',
+41 verbose headers   'content-length': '103',
+41 verbose headers   'accept-ranges': 'bytes',
+41 verbose headers   date: 'Tue, 18 Oct 2016 03:51:02 GMT',
+41 verbose headers   via: '1.1 varnish',
+41 verbose headers   connection: 'keep-alive',
+41 verbose headers   'x-served-by': 'cache-bos8222-BOS',
+41 verbose headers   'x-cache': 'MISS',
+41 verbose headers   'x-cache-hits': '0',
+41 verbose headers   'x-timer': 'S1476762661.453655,VS0,VE684',
+41 verbose headers   vary: 'Accept-Encoding' }
+42 verbose request invalidating /Users/Matt/.npm/registry.npmjs.org/glslify-simple-include on PUT
+43 error publish Failed PUT 403
+44 verbose stack Error: "You cannot publish over the previously published version 0.0.0-alpha.5." : glslify-simple-include
+44 verbose stack     at makeError (/Users/Matt/.npm-packages/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+44 verbose stack     at CachingRegistryClient.<anonymous> (/Users/Matt/.npm-packages/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+44 verbose stack     at Request._callback (/Users/Matt/.npm-packages/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+44 verbose stack     at Request.self.callback (/Users/Matt/.npm-packages/lib/node_modules/npm/node_modules/request/request.js:187:22)
+44 verbose stack     at emitTwo (events.js:106:13)
+44 verbose stack     at Request.emit (events.js:191:7)
+44 verbose stack     at Request.<anonymous> (/Users/Matt/.npm-packages/lib/node_modules/npm/node_modules/request/request.js:1044:10)
+44 verbose stack     at emitOne (events.js:96:13)
+44 verbose stack     at Request.emit (events.js:188:7)
+44 verbose stack     at IncomingMessage.<anonymous> (/Users/Matt/.npm-packages/lib/node_modules/npm/node_modules/request/request.js:965:12)
+45 verbose statusCode 403
+46 verbose pkgid glslify-simple-include
+47 verbose cwd /Users/Matt/Documents/GitHub/matgr1/glslify-simple-include
+48 error Darwin 16.0.0
+49 error argv "/usr/local/Cellar/node/6.8.1/bin/node" "/Users/Matt/.npm-packages/bin/npm" "publish"
+50 error node v6.8.1
+51 error npm  v3.10.8
+52 error code E403
+53 error "You cannot publish over the previously published version 0.0.0-alpha.5." : glslify-simple-include
+54 error If you need help, you may report this error at:
+54 error     <https://github.com/npm/npm/issues>
+55 verbose exit [ 1, true ]

@@ -1,7 +1,6 @@
 {
   "name": "glslify-simple-include",
-  "version": "0.0.0-alpha.7",
-  "description": "glslify transform for a simple \"#pragma include\" directive in shader files",
+  "version": "1.0.0",
   "keywords": [
     "glsl",
     "glslify"
@@ -26,9 +25,12 @@
   },
   "dependencies": {
     "babel-runtime": "^6.11.6",
-    "glsl-simple-include": "0.0.6-alpha.6",
+    "glsl-simple-include": "1.0.0",
     "path": "^0.12.7",
-    "read-text-file": "0.0.0-alpha.3"
+    "read-text-file": "1.0.0"
+  },
+  "peerDependencies": {
+    "glslify": "5.0.1"
   },
   "babel": {
     "presets": [
